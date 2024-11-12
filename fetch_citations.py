@@ -19,8 +19,8 @@ def main():
 
     cite_data = {
         "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "cite_wideband": cite_1,
-        "cite_practical": cite_2,
+        "cite_wideband": cite_2,
+        "cite_practical": cite_1,
     }
     with open(f'scholar_data.json', 'w') as outfile:
         json.dump(cite_data, outfile, ensure_ascii=False)
