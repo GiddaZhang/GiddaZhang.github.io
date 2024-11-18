@@ -163,14 +163,14 @@
     fetch('scholar_data.json')
       .then(response => response.json())
       .then(data => {
-          document.getElementById('citation-count-wideband').innerText = `Cited by ${data.cite_practical}`;
+          document.getElementById('citation-count-wideband').innerText = `Cited by ${data.cite_wideband}`;
       })
   </script>
   <script>
     fetch('scholar_data.json')
       .then(response => response.json())
       .then(data => {
-          document.getElementById('citation-count-practical').innerText = `Cited by ${data.cite_wideband}`;
+          document.getElementById('citation-count-practical').innerText = `Cited by ${data.cite_practical}`;
       })
   </script>
 </body>
