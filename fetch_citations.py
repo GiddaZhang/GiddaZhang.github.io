@@ -4,9 +4,9 @@ from datetime import datetime
 import json
 
 def main():
-    pg = ProxyGenerator()
-    pg.FreeProxies()
-    scholarly.use_proxy(pg)
+    # pg = ProxyGenerator()
+    # pg.FreeProxies()
+    # scholarly.use_proxy(pg)
 
     author: dict = scholarly.search_author_id('9O25UpUAAAAJ')
     scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
